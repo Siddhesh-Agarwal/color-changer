@@ -6,6 +6,10 @@
 
 body {
     background-color: #f0f0f0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    padding: 1em;
 }
 
 .app-title {
@@ -17,12 +21,11 @@ body {
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
 }
 
 .dropdown {
-    width: 400px;
+    width: 100%;
+    max-width: 420px;
     margin-inline: auto;
     margin-top: 2em;
 }
