@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Dropdown from './Dropdown.jsx'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    var options = [
+        { 'label': 'Lime', 'value': 'lime' },
+        { 'label': 'Lavender', 'value': 'lavender' },
+        { 'label': 'Crimson', 'value': 'crimson' },
+        { 'label': 'Darkblue', 'value': 'darkblue' },
+        { 'label': 'Teal', 'value': 'teal' },
+        { 'label': 'Rebecca Purple', 'value': 'rebeccapurple' },
+        { 'label': 'Ghost White', 'value': 'ghostwhite' },
+        { 'label': 'Aqua Marine', 'value': 'aquamarine' },
+        { 'label': 'Alice Blue', 'value': 'aliceblue' }
+    ];
+    return (
+        <div className="App">
+            {/* Heading  */}
+            <h1 className='app-title'>Color Chooser</h1>
+
+            {/* Component  */}
+            <Dropdown options={options} />
+        </div>
+    );
 }
 
 export default App;
