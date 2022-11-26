@@ -43,8 +43,9 @@ function App() {
     ];
     return (
         <div className="App">
+            <h1 id="app-title">React Dropdown</h1>
             <Dropdown options={options} />
-            <ColorChanger options={'white'}/>
+            <ColorChanger options={'white'} />
         </div>
     );
 }

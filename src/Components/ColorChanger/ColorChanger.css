@@ -4,13 +4,13 @@
     min-height: 250px;
     margin-inline: auto;
     margin-top: 2em;
-    border: 1px solid #1f1f1f;
+    border: 2px solid #000;
     border-radius: 0.5em;
 }
 
-#color-box>#app-title {
+#color-box>#placeholder {
     margin-top: 0.5em;
     text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 500;
 }

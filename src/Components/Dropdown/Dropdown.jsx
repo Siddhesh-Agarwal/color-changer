@@ -47,7 +47,9 @@ function Dropdown(options) {
                         <div className="dropdown-item" onClick={() => {
                             document.getElementById("color-box").style.backgroundColor = option.value;
                             document.getElementById("label").innerHTML = option.label;
-                            document.getElementById("app-title").style.color = invertColor(standardize_color(option.value));
+                            document.getElementById("placeholder").style.color = invertColor(standardize_color(option.value));
+                            // collapse the dropdown
+                            setIsOpen(false);
                         }}>
                             {option.label}
                         </div>
