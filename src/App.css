@@ -1,73 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f0f0f0;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    padding: 1em;
-}
-
-.app-title {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    color: #333333;
-    margin: 1rem 0;
-}
-
-.dropdown {
-    width: 100%;
-    max-width: 420px;
-    margin-inline: auto;
+.App {
     margin-top: 2em;
+    padding-inline: 1em;
 }
 
-.dropdown .dropdown-btn {
-    padding: 0.75em 1.25em;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-    border-radius: 0.25em;
-    cursor: pointer;
-    color: #333333;
-    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.05);
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.dropdown .dropdown-content {
-    margin-top: 0.25em;
-    left: 0;
-    padding: 1em;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 0.25em;
-    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.05);
-    font-weight: 400;
-    color: #333;
-    width: 100%;
-    cursor: pointer;
-}
-
-.dropdown .dropdown-content .dropdown-item {
-    padding: 0.5em;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-}
-
-.dropdown .dropdown-content .dropdown-item:hover {
-    background-color: #f4f4f4;
-}
 
 @media screen and (min-width: 768px) {
-    body {
-        display: grid;
-        align-items: center;
+    .App {
+        margin-top: 2.5em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .App {
+        margin-top: 3em;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .App {
+        margin-top: 4em;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .App {
+        margin-top: 5em;
     }
 }
